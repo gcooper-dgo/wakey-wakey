@@ -73,10 +73,10 @@ def main():
         now:time = (datetime.now().hour, datetime.now().minute)
         if now < quitting_time:
             press_key(0x91)  # tap the Scroll Lock key
-            sleep(180)   # Wait for 3 minutes
+            sleep(120)   
         else:  
             print("It's past 2:30. You can go home now!")
-            if input() == 'eggs and bakey':
+            if input('  > ') == 'eggs and bakey':
                 days_till()
                 continue
             else:
